@@ -10,7 +10,7 @@ export const MovieCard = (props: MovieCardProps) => {
   const { img, rating, name } = props;
   return (
     <div
-      className="w-[157.5px]  bg-[#F4F4F5] rounded-sm md:w-[229.7px]
+      className="w-[157.5px] mx-auto  bg-[#F4F4F5] rounded-sm md:w-[229.7px]
 
 "
     >
