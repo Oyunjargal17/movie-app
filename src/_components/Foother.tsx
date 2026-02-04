@@ -1,7 +1,7 @@
 export const Foother = () => {
   return (
     <div>
-      <div className="bg-[#4338CA] md:flex md:justify-between">
+      <div className="bg-[#4338CA] w-fit md:flex md:justify-between">
         <div>
           <div className="flex flex-col justify-between">
             <div className="flex gap-2 pl-5 pt-2">

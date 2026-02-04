@@ -9,7 +9,7 @@ import {
 
 export const Header = () => {
   return (
-    <div className="w-full h-fit flex justify-between m-3 lg:w-360 mx-auto">
+    <div className="w-full h-fit flex justify-between p-6">
       <div className="flex gap-2 p-2">
         <img className="w-5 h-5" src="./filmLigth.svg" alt="Film" />
         <img className="w-16 h-5" src="./Movie Z.svg" alt="Movie Z" />

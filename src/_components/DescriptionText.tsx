@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const DescriptionText = () => {
   return (
-    <div className="m-2 md:absolute top-44.5 left-35 right-224 bottom-39.5 md:text-white md:w-101">
+    <div className="md:top-1/2 md:left-1/12 md:w-100 md:absolute z-10  md:text-white">
       <div className="flex md:flex-col justify-between p-2">
         <div>
           <p className="text-sm">Now Playing:</p>
