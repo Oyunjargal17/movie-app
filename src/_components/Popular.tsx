@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { MovieCard } from "./MovieCard";
 import Link from "next/link";
+import { MovieCardList } from "./MovieCardList";
 export const Popular = () => {
   return (
     <div>
@@ -15,16 +16,7 @@ export const Popular = () => {
       </div>
       <div>
         <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
+          <MovieCardList />
         </div>
       </div>
     </div>

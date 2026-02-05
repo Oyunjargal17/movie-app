@@ -1,0 +1,74 @@
+import { Star } from "lucide-react";
+import { MovieCard } from "./MovieCard";
+const movieCards = [
+  {
+    id: 1,
+    name: "Titanic",
+    rating: 1,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL94Dz7To4p6R3AVyLsyaPcZK5iQqNS29NkA&s",
+  },
+  {
+    id: 2,
+    name: "Harry Potter",
+    rating: 2,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCiAXswOiFuucVXOTeqw95qWU7YEVEKS4qw&s",
+  },
+  {
+    id: 3,
+    name: "Wonder",
+    rating: 3,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8gUxvBM0BaRU5q1qN0tbVSHhmtXi7A7Ea3A&s",
+  },
+  {
+    id: 4,
+    name: "Avatar",
+    rating: 4,
+    image:
+      "https://m.media-amazon.com/images/I/81N2Jxv26XL._AC_UF894,1000_QL80_.jpg",
+  },
+  {
+    id: 5,
+    name: "Lucie",
+    rating: 5,
+    image: "https://i.ebayimg.com/images/g/UgcAAOSwdm9mDfNe/s-l1600.webp",
+  },
+];
+
+export const MovieCardList = () => {
+  return (
+    <div className="space-y-4 ">
+      <div className="flex gap-3 overflow-x-auto pb-4">
+        {movieCards.map((movie) => {
+          return (
+            <MovieCard
+              key={movie.id}
+              id={movie.id}
+              img={movie.image}
+              name={movie.name}
+              rating={movie.rating}
+            />
+          );
+        })}
+      </div>
+
+      {/* <img
+        className="w-full h-[233px]  md:h-[340px]"
+        src="./dear-santa.jpg"
+        alt="poster"
+      /> */}
+      {/* <div className="w-full h-full">
+        <div className="flex gap-2 mt-2">
+          <Star className="text-[#FDE047]" />
+          <div className="flex">
+            <p>{rating}/</p>
+            <p>10</p>
+          </div>
+        </div>
+        <h1>{name}</h1>
+      </div> */}
+    </div>
+  );
+};

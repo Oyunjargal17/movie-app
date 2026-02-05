@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { MovieCard } from "./MovieCard";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { MovieCardList } from "./MovieCardList";
 export const Upcoming = () => {
   // const router = useRouter();
   return (
@@ -22,17 +23,8 @@ export const Upcoming = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
+        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2 w-fit">
+          <MovieCardList />
         </div>
       </div>
     </div>

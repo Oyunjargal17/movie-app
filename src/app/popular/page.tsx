@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MovieCard } from "@/_components";
 import Link from "next/link";
+import { MovieCardList } from "@/_components/MovieCardList";
 
 export default function Popular() {
   return (
@@ -18,16 +19,7 @@ export default function Popular() {
       </div>
       <div>
         <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
-          <MovieCard />
+          <MovieCardList />
         </div>
       </div>
     </div>
