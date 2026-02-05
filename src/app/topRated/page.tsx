@@ -1,18 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { MovieCard } from "./MovieCard";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { MovieCard } from "@/_components";
 import Link from "next/link";
 
-export const TopRated = () => {
+export default function TopRated() {
   return (
     <div>
       <div className="flex justify-between m-2">
-        <h1>Top Rated</h1>
-        <Link href="/topRated">
+        <Link href="/">
           <Button variant={"outline"}>
-            See more <ArrowRight />
+            <ArrowLeft />
+            Back
           </Button>
         </Link>
+
+        <h1>Top Rated</h1>
       </div>
       <div>
         <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
@@ -30,4 +32,4 @@ export const TopRated = () => {
       </div>
     </div>
   );
-};
+}

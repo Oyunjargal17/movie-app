@@ -37,8 +37,8 @@ const movieCards = [
   },
 ];
 
-export const MovieCard = (props: MovieCardProps) => {
-  const { img, rating, name } = props;
+export const MovieCard = () => {
+  // const { img, rating, name } = props;
   return (
     <div className="w-full mx-auto  bg-[#F4F4F5] rounded-sm ">
       <img
@@ -50,11 +50,11 @@ export const MovieCard = (props: MovieCardProps) => {
         <div className="flex gap-2 mt-2">
           <Star className="text-[#FDE047]" />
           <div className="flex">
-            <p>{rating}/</p>
+            {/* <p>{rating}/</p> */}
             <p>10</p>
           </div>
         </div>
-        <h1>{name}</h1>
+        {/* <h1>{name}</h1> */}
       </div>
     </div>
   );
