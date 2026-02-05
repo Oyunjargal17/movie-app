@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 
-type MovieCardProps = {
+type MovieCardType = {
   img: string;
   rating: number;
   name: string;
@@ -35,27 +35,52 @@ const movieCards = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8gUxvBM0BaRU5q1qN0tbVSHhmtXi7A7Ea3A&s",
   },
+  {
+    id: 5,
+    name: "Wonder",
+    rating: 4,
+    image: "https://static.posters.cz/image/750/48833.jpg",
+  },
 ];
 
-export const MovieCard = () => {
-  // const { img, rating, name } = props;
+export const MovieCard = ({ img, rating, name }: MovieCardType) => {
   return (
     <div className="w-full mx-auto  bg-[#F4F4F5] rounded-sm ">
-      <img
+      {movieCards.map((item, index) => {
+        return (
+          <div
+            key={item.id}
+            className="w-full h-[233px]  md:h-[340px]"
+            style={{ backgroundImage: `url(${item.image})` }}
+          >
+            <div className="w-full h-full">
+              <div className="flex gap-2 mt-2">
+                <Star className="text-[#FDE047]" />
+                <div className="flex">
+                  <p>{rating}/</p>
+                  <p>10</p>
+                </div>
+              </div>
+              <h1>{name}</h1>
+            </div>
+          </div>
+        );
+      })}
+      {/* <img
         className="w-full h-[233px]  md:h-[340px]"
         src="./dear-santa.jpg"
         alt="poster"
-      />
-      <div className="w-full h-full">
+      /> */}
+      {/* <div className="w-full h-full">
         <div className="flex gap-2 mt-2">
           <Star className="text-[#FDE047]" />
           <div className="flex">
-            {/* <p>{rating}/</p> */}
+            <p>{rating}/</p>
             <p>10</p>
           </div>
         </div>
-        {/* <h1>{name}</h1> */}
-      </div>
+        <h1>{name}</h1>
+      </div> */}
     </div>
   );
 };
