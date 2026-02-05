@@ -6,7 +6,9 @@ import {
   Popular,
   TopRated,
   Upcoming,
+  MovieCard,
 } from "@/_components";
+import Link from "next/link";
 
 export default function Home() {
   return (
