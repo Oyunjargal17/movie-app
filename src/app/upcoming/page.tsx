@@ -1,11 +1,11 @@
 "use client";
 
-import { MovieCard } from "@/_components";
+import { MovieCard } from "@/app/_components";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { MovieCardList } from "@/_components/MovieCardList";
+import { MovieCardList } from "@/app/_components/MovieCardList";
 // import { MovieCard } from "./MovieCard";
 
 export default function Upcoming() {
@@ -21,7 +21,7 @@ export default function Upcoming() {
         <h1 className="m-2 bold">Upcoming</h1>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
+        <div>
           <MovieCardList />
         </div>
       </div>

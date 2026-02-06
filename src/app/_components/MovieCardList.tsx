@@ -40,7 +40,7 @@ const movieCards = [
 export const MovieCardList = () => {
   return (
     <div className="space-y-4 ">
-      <div className="flex gap-3 overflow-x-auto pb-4">
+      <div className=" gap-3 overflow-x-auto pb-4 grid grid-cols-2 md:grid-cols-5">
         {movieCards.map((movie) => {
           return (
             <MovieCard
@@ -53,22 +53,6 @@ export const MovieCardList = () => {
           );
         })}
       </div>
-
-      {/* <img
-        className="w-full h-[233px]  md:h-[340px]"
-        src="./dear-santa.jpg"
-        alt="poster"
-      /> */}
-      {/* <div className="w-full h-full">
-        <div className="flex gap-2 mt-2">
-          <Star className="text-[#FDE047]" />
-          <div className="flex">
-            <p>{rating}/</p>
-            <p>10</p>
-          </div>
-        </div>
-        <h1>{name}</h1>
-      </div> */}
     </div>
   );
 };

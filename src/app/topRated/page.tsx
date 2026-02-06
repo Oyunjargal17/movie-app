@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { MovieCard } from "@/_components";
+import { MovieCard } from "@/app/_components";
 import Link from "next/link";
-import { MovieCardList } from "@/_components/MovieCardList";
+import { MovieCardList } from "@/app/_components/MovieCardList";
 
 export default function TopRated() {
   return (
