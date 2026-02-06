@@ -15,7 +15,7 @@ export const Popular = () => {
         </Link>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
+        <div className=" mx-auto gap-2">
           <MovieCardList />
         </div>
       </div>

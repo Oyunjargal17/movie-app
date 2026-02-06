@@ -62,22 +62,6 @@ export const MovieCard = ({ img, rating, name }: MovieCardType) => {
       <div className="absolute bottom-0 left-0 w-full p-2 bg-gradient-to-t from-black/70 to-transparent">
         <h3 className="text-white text-sm font-medium">{name}</h3>
       </div>
-
-      {/* <img
-        className="w-full h-[233px]  md:h-[340px]"
-        src="./dear-santa.jpg"
-        alt="poster"
-      /> */}
-      {/* <div className="w-full h-full">
-        <div className="flex gap-2 mt-2">
-          <Star className="text-[#FDE047]" />
-          <div className="flex">
-            <p>{rating}/</p>
-            <p>10</p>
-          </div>
-        </div>
-        <h1>{name}</h1>
-      </div> */}
     </div>
   );
 };

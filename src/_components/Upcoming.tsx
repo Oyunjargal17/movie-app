@@ -23,7 +23,8 @@ export const Upcoming = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2 w-fit">
+        <div>
+          {/* <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2 w-fit"> */}
           <MovieCardList />
         </div>
       </div>
