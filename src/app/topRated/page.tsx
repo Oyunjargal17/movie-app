@@ -18,7 +18,7 @@ export default function TopRated() {
         <h1>Top Rated</h1>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
+        <div>
           <MovieCardList />
         </div>
       </div>

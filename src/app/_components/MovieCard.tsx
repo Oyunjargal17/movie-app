@@ -6,61 +6,24 @@ type MovieCardType = {
   name: string;
   id: number;
 };
-// const movieCards = [
-//   {
-//     id: 1,
-//     name: "Titanic",
-//     rating: 1,
-//     image:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL94Dz7To4p6R3AVyLsyaPcZK5iQqNS29NkA&s",
-//   },
-//   {
-//     id: 2,
-//     name: "Harry Potter",
-//     rating: 2,
-//     image:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCiAXswOiFuucVXOTeqw95qWU7YEVEKS4qw&s",
-//   },
-//   {
-//     id: 3,
-//     name: "Wonder",
-//     rating: 3,
-//     image:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8gUxvBM0BaRU5q1qN0tbVSHhmtXi7A7Ea3A&s",
-//   },
-//   {
-//     id: 4,
-//     name: "Avatar",
-//     rating: 4,
-//     image:
-//       "https://m.media-amazon.com/images/I/81N2Jxv26XL._AC_UF894,1000_QL80_.jpg",
-//   },
-//   {
-//     id: 5,
-//     name: "Lucie",
-//     rating: 5,
-//     image: "https://i.ebayimg.com/images/g/UgcAAOSwdm9mDfNe/s-l1600.webp",
-//   },
-// ];
 
 export const MovieCard = ({ img, rating, name }: MovieCardType) => {
   return (
-    <div className="relative w-full aspect-[2/3] rounded-md overflow-hidden group cursor-pointer">
+    <div className="w-full">
       <img
         src={img}
         alt={name}
-        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+        className="w-full h-75 md:h-87.5 rounded-t-lg"
       />
-
-      <div className="absolute top-0 left-0 w-full p-2">
-        <div className="flex items-center gap-1 bg-black/50 rounded px-2 py-1 w-fit">
-          <Star className="w-4 h-4 text-[#FDE047] fill-[#FDE047]" />
-          <span className="text-white text-sm">{rating}/10</span>
+      <div className="w-full bg-[#F4F4F5] h-21 rounded-b-lg flex flex-col">
+        <div className="  flex gap-1 p-2">
+          <Star className="w-5 h-5 text-[#FDE047] fill-[#FDE047]" />
+          <span className="text-sm">{rating}/10</span>
         </div>
-      </div>
 
-      <div className="absolute bottom-0 left-0 w-full p-2 bg-gradient-to-t from-black/70 to-transparent">
-        <h3 className="text-white text-sm font-medium">{name}</h3>
+        <div className=" bottom-2 left-2.5">
+          <h3 className="text-xl p-2 ">{name}</h3>
+        </div>
       </div>
     </div>
   );

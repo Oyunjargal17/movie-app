@@ -12,9 +12,6 @@ export const Upcoming = () => {
       <div className="flex justify-between m-2">
         <h1 className="m-2 bold">Upcoming</h1>
         <div>
-          {/* <Button onClick={() => router.back()} variant={"outline"}>
-            Back <ArrowRight />
-          </Button> */}
           <Link href="/upcoming">
             <Button variant={"outline"}>
               See more <ArrowRight />
@@ -24,7 +21,6 @@ export const Upcoming = () => {
       </div>
       <div>
         <div>
-          {/* <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2 w-fit"> */}
           <MovieCardList />
         </div>
       </div>

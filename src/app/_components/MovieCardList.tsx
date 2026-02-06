@@ -39,8 +39,8 @@ const movieCards = [
 
 export const MovieCardList = () => {
   return (
-    <div className="space-y-4 ">
-      <div className=" gap-3 overflow-x-auto pb-4 grid grid-cols-2 md:grid-cols-5">
+    <div>
+      <div className=" gap-3 pb-4 grid grid-cols-2 md:grid-cols-5">
         {movieCards.map((movie) => {
           return (
             <MovieCard

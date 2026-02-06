@@ -7,7 +7,7 @@ import { MovieCardList } from "@/app/_components/MovieCardList";
 export default function Popular() {
   return (
     <div>
-      <div className="flex justify-between m-2">
+      <div className="flex justify-between m-2 p-10">
         <Link href="/">
           <Button variant={"outline"}>
             <ArrowLeft />
@@ -18,7 +18,7 @@ export default function Popular() {
         <h1>Popular</h1>
       </div>
       <div>
-        <div className="grid grid-cols-2 mx-auto md:grid-cols-5 gap-2">
+        <div>
           <MovieCardList />
         </div>
       </div>
